@@ -1,0 +1,55 @@
+name: Bug report
+description: Report reproducible incorrect frontend behavior
+title: "[Bug]: "
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is wrong?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Add screenshots, console output, failing test details, or other useful evidence.
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser/OS or other context if relevant.
+      placeholder: "Chrome 153 / Windows 11"
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Related issues, suspected cause, regression information, etc.
